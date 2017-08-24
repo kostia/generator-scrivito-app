@@ -19,7 +19,7 @@ Scrivito.provideUiConfig(TextWidget, {
   customGroups: [
     {
       title: 'My Tab',
-      component: 'MyTab',
+      component: 'MyWidgetTab',
     },
   ],
   */

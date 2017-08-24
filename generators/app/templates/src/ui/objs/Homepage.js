@@ -19,7 +19,7 @@ Scrivito.provideUiConfig(Homepage, {
   customGroups: [
     {
       title: 'My Tab',
-      component: 'MyTab',
+      component: 'MyObjTab',
     },
   ],
   */
