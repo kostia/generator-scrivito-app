@@ -33,12 +33,6 @@ module.exports = class extends Generator {
         store: true,
       }).then(({ appName }) => {
         this.fs.copyTpl(
-          this.templatePath('src/config/Scrivito.js'),
-          this.destinationPath('src/config/Scrivito.js'),
-          { tenantId }
-        );
-
-        this.fs.copyTpl(
           this.templatePath('package.json'),
           this.destinationPath('package.json'),
           { appName }
@@ -72,8 +66,14 @@ module.exports = class extends Generator {
         );
 
         this.fs.copyTpl(
-          this.templatePath('src/ui'),
-          this.destinationPath('src/ui')
+          this.templatePath('src/config'),
+          this.destinationPath('src/config'),
+          { tenantId }
+        );
+
+        this.fs.copyTpl(
+          this.templatePath('src/extensions'),
+          this.destinationPath('src/extensions')
         );
 
         this.fs.copyTpl(
