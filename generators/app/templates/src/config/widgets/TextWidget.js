@@ -1,9 +1,9 @@
 import TextWidget from 'models/widgets/TextWidget';
 
-Scrivito.provideUiConfig(TextWidget, {
+Scrivito.provideEditingConfig(TextWidget, {
   title: 'Text Widget',
 
-  attributes: {
+  attributesConfig: {
     title: {
       title: 'Title',
       description: 'Optional: Title of the widget.'
@@ -16,7 +16,7 @@ Scrivito.provideUiConfig(TextWidget, {
   },
 
   /*
-  customGroups: [
+  propertiesGroups: [
     {
       title: 'My Tab',
       component: 'MyWidgetTab',

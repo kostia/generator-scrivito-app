@@ -1,9 +1,9 @@
 import Homepage from 'models/objs/Homepage';
 
-Scrivito.provideUiConfig(Homepage, {
+Scrivito.provideEditingConfig(Homepage, {
   title: 'Homepage',
 
-  attributes: {
+  attributesConfig: {
     title: {
       title: 'Title',
       description: 'Title of the homepage.',
@@ -16,7 +16,7 @@ Scrivito.provideUiConfig(Homepage, {
   },
 
   /*
-  customGroups: [
+  propertiesGroups: [
     {
       title: 'My Tab',
       component: 'MyObjTab',
