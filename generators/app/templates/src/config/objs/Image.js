@@ -1,6 +1,6 @@
 import Image from 'models/objs/Image';
 
-Scrivito.provideUiConfig(Image, {
+Scrivito.provideEditingConfig(Image, {
   title: 'Image',
 
   attributesConfig: {

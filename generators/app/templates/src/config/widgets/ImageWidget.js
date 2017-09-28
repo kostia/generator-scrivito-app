@@ -1,6 +1,6 @@
 import ImageWidget from 'models/widgets/ImageWidget';
 
-Scrivito.provideUiConfig(ImageWidget, {
+Scrivito.provideEditingConfig(ImageWidget, {
   title: 'Image Widget',
 
   attributesConfig: {
