@@ -1,6 +1,6 @@
 import TextWidget from 'models/widgets/TextWidget';
 
-Scrivito.provideUiConfig(TextWidget, {
+Scrivito.provideEditingConfig(TextWidget, {
   title: 'Text Widget',
 
   attributesConfig: {
