@@ -1,6 +1,6 @@
 import Homepage from 'models/objs/Homepage';
 
-Scrivito.provideEditingConfig(Homepage, {
+Scrivito.provideUiConfig(Homepage, {
   title: 'Homepage',
 
   attributesConfig: {
