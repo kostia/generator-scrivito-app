@@ -1,6 +1,4 @@
-export default Scrivito.createObjClass({
-  name: 'Download',
-
+export default Scrivito.provideObjClass('Download', {
   attributes: {
     blob: 'binary',
   },

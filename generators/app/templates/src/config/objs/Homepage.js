@@ -1,6 +1,4 @@
-import Homepage from 'models/objs/Homepage';
-
-Scrivito.provideEditingConfig(Homepage, {
+Scrivito.provideEditingConfig('Homepage', {
   title: 'Homepage',
 
   attributesConfig: {
@@ -15,12 +13,15 @@ Scrivito.provideEditingConfig(Homepage, {
     },
   },
 
-  /*
+  generalProperties: [
+    'title',
+    'content',
+  ],
+
   propertiesGroups: [
     {
       title: 'My Tab',
       component: 'MyObjTab',
     },
   ],
-  */
 });

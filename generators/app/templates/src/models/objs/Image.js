@@ -1,6 +1,4 @@
-export default Scrivito.createObjClass({
-  name: 'Image',
-
+export default Scrivito.provideObjClass('Image', {
   attributes: {
     blob: 'binary',
   },

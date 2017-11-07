@@ -1,6 +1,4 @@
-export default Scrivito.createWidgetClass({
-  name: 'ImageWidget',
-
+export default Scrivito.provideWidgetClass('ImageWidget', {
   attributes: {
     image: 'reference',
   },

@@ -1,6 +1,4 @@
-export default Scrivito.createWidgetClass({
-  name: 'TextWidget',
-
+export default Scrivito.provideWidgetClass('TextWidget', {
   attributes: {
     title: 'string',
     content: 'html',

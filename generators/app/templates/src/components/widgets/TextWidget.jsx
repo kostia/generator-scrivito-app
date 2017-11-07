@@ -1,6 +1,4 @@
-import TextWidget from 'models/widgets/TextWidget';
-
-Scrivito.provideComponent(TextWidget, ({ widget }) => {
+Scrivito.provideComponent('TextWidget', ({ widget }) => {
   let title;
 
   if (widget.get('title')) {

@@ -1,6 +1,4 @@
-import Download from 'models/objs/Download';
-
-Scrivito.provideEditingConfig(Download, {
+Scrivito.provideEditingConfig('Download', {
   title: 'Download',
 
   attributesConfig: {
@@ -8,4 +6,8 @@ Scrivito.provideEditingConfig(Download, {
       title: 'Blob',
     },
   },
+
+  generalProperties: [
+    'blob',
+  ],
 });
