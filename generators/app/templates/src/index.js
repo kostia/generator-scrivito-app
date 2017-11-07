@@ -1,21 +1,15 @@
-require('./config/Scrivito.js');
+require('Config.js');
 
-const objConfigs = require.context('./config/objs/', true, /\.jsx?$/);
-objConfigs.keys().forEach(objConfigs);
+const Objs = require.context('./Objs/', true, /\.jsx?$/);
+Objs.keys().forEach(Objs);
 
-const widgetConfigs = require.context('./config/widgets/', true, /\.jsx?$/);
-widgetConfigs.keys().forEach(widgetConfigs);
+const Widgets = require.context('./Widgets/', true, /\.jsx?$/);
+Widgets.keys().forEach(Widgets);
 
-const models = require.context('./models/', true, /\.jsx?$/);
-models.keys().forEach(models);
+const Extensions = require.context('./Extensions/', true, /\.jsx?$/);
+Extensions.keys().forEach(Extensions);
 
-const components = require.context('./components/', true, /\.jsx?$/);
-components.keys().forEach(components);
-
-const extensions = require.context('./extensions/', true, /\.jsx?$/);
-extensions.keys().forEach(extensions);
-
-import App from 'components/App.jsx';
+import App from 'App.jsx';
 
 const application = document.getElementById('application');
 
