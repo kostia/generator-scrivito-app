@@ -7,7 +7,7 @@ const WARNING = `
   Once you found your tenant ID, please adjust the file "src/config/Scrivito.js".
 `;
 
-const NOTICE = `
+const SUCCESS = `
   See README.md for the instructions of how to get the app running!
   😘 😘 😘
 `;
@@ -56,24 +56,29 @@ module.exports = class extends Generator {
         );
 
         this.fs.copyTpl(
-          this.templatePath('src/models'),
-          this.destinationPath('src/models')
-        );
-
-        this.fs.copyTpl(
-          this.templatePath('src/components'),
-          this.destinationPath('src/components')
-        );
-
-        this.fs.copyTpl(
-          this.templatePath('src/config'),
-          this.destinationPath('src/config'),
+          this.templatePath('src/Config.js'),
+          this.destinationPath('src/Config.js'),
           { tenantId }
         );
 
         this.fs.copyTpl(
-          this.templatePath('src/extensions'),
-          this.destinationPath('src/extensions')
+          this.templatePath('src/Objs'),
+          this.destinationPath('src/Objs')
+        );
+
+        this.fs.copyTpl(
+          this.templatePath('src/Widgets'),
+          this.destinationPath('src/Widgets')
+        );
+
+        this.fs.copyTpl(
+          this.templatePath('src/Extensions'),
+          this.destinationPath('src/Extensions')
+        );
+
+        this.fs.copyTpl(
+          this.templatePath('src/App.jsx'),
+          this.destinationPath('src/App.jsx')
         );
 
         this.fs.copyTpl(
@@ -81,7 +86,7 @@ module.exports = class extends Generator {
           this.destinationPath('src/index.js')
         );
 
-        this.log(NOTICE);
+        this.log(SUCCESS);
       });
     });
   }

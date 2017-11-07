@@ -1,6 +1,4 @@
-import TextWidget from 'models/widgets/TextWidget';
-
-Scrivito.provideEditingConfig(TextWidget, {
+Scrivito.provideEditingConfig('TextWidget', {
   title: 'Text Widget',
 
   attributesConfig: {
@@ -15,13 +13,16 @@ Scrivito.provideEditingConfig(TextWidget, {
     },
   },
 
-  /*
+  generalProperties: [
+    'title',
+    'content',
+  ],
+
   propertiesGroups: [
     {
       title: 'My Tab',
       component: 'MyWidgetTab',
     },
   ],
-  */
 });
 
