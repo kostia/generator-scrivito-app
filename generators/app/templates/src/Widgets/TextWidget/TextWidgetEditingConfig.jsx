@@ -1,7 +1,7 @@
 Scrivito.provideEditingConfig('TextWidget', {
   title: 'Text Widget',
 
-  attributesConfig: {
+  attributes: {
     title: {
       title: 'Title',
       description: 'Optional: Title of the widget.'
@@ -13,7 +13,7 @@ Scrivito.provideEditingConfig('TextWidget', {
     },
   },
 
-  generalProperties: [
+  properties: [
     'title',
     'content',
   ],
