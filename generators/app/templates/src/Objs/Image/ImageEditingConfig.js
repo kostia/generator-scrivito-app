@@ -1,14 +1,14 @@
 Scrivito.provideEditingConfig('Image', {
   title: 'Image',
 
-  attributesConfig: {
+  attributes: {
     blob: {
       title: 'Image',
       description: 'Updating this image will update it eveywhere it was used.',
     },
   },
 
-  generalProperties: [
+  properties: [
     'blob',
   ],
 });

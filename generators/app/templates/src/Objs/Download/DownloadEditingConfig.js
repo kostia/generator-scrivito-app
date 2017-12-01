@@ -1,13 +1,13 @@
 Scrivito.provideEditingConfig('Download', {
   title: 'Download',
 
-  attributesConfig: {
+  attributes: {
     blob: {
       title: 'Blob',
     },
   },
 
-  generalProperties: [
+  properties: [
     'blob',
   ],
 });

@@ -2,8 +2,12 @@
   "name": "generator-scrivito-app",
   "version": "1.0.0",
   "license": "MIT",
-  "files": ["generators"],
-  "keywords": ["yeoman-generator"],
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
   "dependencies": {
     "yeoman-generator": "^1.1.1"
   }

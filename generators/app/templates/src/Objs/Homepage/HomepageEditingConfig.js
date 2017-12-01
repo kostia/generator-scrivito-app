@@ -1,7 +1,7 @@
 Scrivito.provideEditingConfig('Homepage', {
   title: 'Homepage',
 
-  attributesConfig: {
+  attributes: {
     title: {
       title: 'Title',
       description: 'Title of the homepage.',
@@ -13,7 +13,7 @@ Scrivito.provideEditingConfig('Homepage', {
     },
   },
 
-  generalProperties: [
+  properties: [
     'title',
     'content',
   ],
